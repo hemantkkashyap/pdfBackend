@@ -1,0 +1,198 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh; /* Make the body full height */
+  margin: 0; /* Remove default margin */
+  font-family: Inter;
+  font-weight: Regular;
+}
+.mainDiv {
+  max-width: 430px;
+  min-height: 100vh;
+  width: 100%;
+}
+.navbar {
+  padding-left: 10px;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+
+.heading {
+  display: flex;
+  align-items: end;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  gap: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 9vh;
+  padding-top: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: #fff1e8;
+}
+
+.badgeLogo {
+  min-width: 60px;
+  max-width: fit-content;
+  height: 15px;
+  background: url("https://ikarma.s3.us-east-2.amazonaws.com/webpage/ikarma.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.logo {
+  margin-top: 8px;
+  width: 70px;
+  max-width: 80px;
+  min-height: 18px;
+  background: url("https://ikarma.s3.us-east-2.amazonaws.com/webpage/ikarma.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+}
+p {
+  margin: 0px;
+}
+.content1 {
+  padding-left: 10px;
+  min-height: 28vh;
+}
+.content1 .imagediv {
+  padding-top: 10px;
+  width: 100%;
+  min-height: 70%;
+}
+.content1 .imagediv .imageContainer .image1 {
+  width: 150px;
+  height: 150px;
+  background: url("https://ikarma.s3.us-east-2.amazonaws.com/badges/free/Clean_City_Crusader.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.content1 .imagediv .imageContainer .image2 {
+  width: 150px;
+  height: 150px;
+  background: url("");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+.content1 .imagediv .details {
+  padding: 5px;
+  padding-right: 0px;
+  margin-top: 10px;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+.content1 .issuedBy {
+  display: flex;
+  margin-top: 10px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 14px;
+  align-items: center;
+  width: 100%;
+  min-height: 10%;
+}
+
+.citation {
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10vh;
+  margin-bottom: 10px;
+}
+.citationHeading,
+.descriptionHeading {
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 16px;
+}
+.citation .citationPara,
+.descriptionPara {
+  margin-top: 5px;
+  text-align: justify;
+  font-family: Inter;
+  font-weight: Thin;
+  font-size: 16px;
+}
+
+.description {
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 10vh;
+}
+
+.text1 {
+  font-family: Figtree;
+  font-weight: Bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.badgeName {
+  width: 204px;
+  color: rgba(0, 0, 0, 1);
+  font-family: Figtree;
+  font-weight: SemiBold;
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: 1;
+}
+.v3485_13275 {
+  display: flex;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 16px;
+}
+
+.v3485_13275 .one {
+  min-width: fit-content;
+}
+.v3485_13275 .two {
+  text-wrap: wrap;
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+@media screen and (min-width: 400px) {
+  .heading {
+    min-height: 6vh;
+  }
+  .image {
+    width: 60%;
+  }
+  .details {
+    width: 30%;
+    min-height: 100%;
+  }
+  .content1 {
+    min-height: 20vh;
+  }
+}
