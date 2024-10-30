@@ -56,4 +56,4 @@ def stream_summary():
     return Response(stream_with_context(generate_summary()), content_type='text/event-stream')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5000)
