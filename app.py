@@ -7,7 +7,8 @@ app = Flask(__name__)
 from flask_cors import CORS
 CORS(app)  # Enable CORS
 
-summarizer = pipeline("summarization")
+summarizer = pipeline("summarization", model="sshleifer/distilbart-xsum-6-6", torch_dtype="float16", device=0)
+
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
