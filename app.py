@@ -55,5 +55,11 @@ def stream_summary():
 
     return Response(stream_with_context(generate_summary()), content_type='text/event-stream')
 
+# Health check endpoint for Render
+@app.route('/health')
+def health_check():
+    return {'status': 'ok'}, 200
+
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
